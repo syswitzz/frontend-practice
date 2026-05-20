@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Discord</title>
+    <style>
+        p {
+            margin: 0px;
+        }
+        body {
+            background-image: url('images/discord.png');
+            color: #ffffff;
+            font-family: Roboto, Arial;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-section {
+            background-color: #36393f;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 34px;
+            padding-right: 50px;
+            border-radius: 10px;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .form-input {
+            background-color: #2f3136;
+            color: #ffffff;
+            border: 1px solid rgb(75, 75, 75);
+            padding: 12px 120px;
+            border-radius: 8px;
+        }
+        .welcome-text {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 14px;
+        }
+        .excited-text {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            margin-bottom: 24px;
+            color: rgb(220, 220, 220);
+        }
+        .login-button {
+            background-color: rgb(88, 101, 242);
+            color: white;
+            border: none;
+            padding: 12px 120px;
+            border-radius: 8px;
+        }
+        .email-label, .password-label {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+        .forgot-password {
+            font-size: 13px;
+            color: rgb(104, 115, 237);
+            padding-top: 8px;
+            padding-bottom: 18px;
+        }
+        .qr-section {
+            background-color: #36393f;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 28px;
+            border-radius: 10px;
+            margin-left: -14px;
+        }
+        .qr-image {
+            width: 160px;
+            margin-bottom: 20px;
+            margin-top: 31px;
+        }
+        .logo {
+            position: absolute;
+            top: 62px;
+            left: 48px;
+            width: 126px;
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="images/logo.svg" alt="Discord Logo">
+    <main>
+        <div class="form-section">
+            <p class="welcome-text">Welcome back!</p>
+            <p class="excited-text">We're so excited to see you again!</p>
+
+            <form class="form" action="submit" method="get">
+                <label class="email-label" for="email">Email or Phone Number <span style="color: rgba(232, 77, 16, 0.864);">*</span></label>
+                <input style="margin-bottom: 18px;" class="form-input" type="text" id="email" name="email" required>
+                <label class="password-label" for="password">Password <span style="color: rgba(232, 77, 16, 0.864);">*</span></label>
+                <input class="form-input" type="password" id="password" name="password" required>
+                <p class="forgot-password">Forgot your password?</p>
+                <button class="login-button" type="submit">Log In</button>
+                <p class="forgot-password"><span style="color: darkgrey;">Need an account?</span> Register</p>
+            </form>
+        </div>
+
+        <div class="qr-section">
+            <img class="qr-image" src="images/qr.png" alt="Login QR">
+
+            <p class="welcome-text" style="font-size: 20px;">Log in with QR Code</p>
+            <p class="excited-text" style="text-align: center; width: 220px; margin-bottom: 10px;">Scan this with <span style="font-weight: bold;">Discord mobile app</span> to log in instanty.</p>
+            <p class="forgot-password" style="padding-top: 0px; margin-bottom: 27px;">Or, sign in with passkey</p>
+        </div>
+    </main>
+</body>
+</html>
